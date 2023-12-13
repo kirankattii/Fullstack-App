@@ -122,7 +122,7 @@ const PostDetails = () => {
 						</div>
 					</div>
 					<img
-						src={IF + post.photo}
+						src={post.photo ? IF + post.photo : "fallback_image_url"}
 						alt=""
 						className="w-full  mx-auto mt-8 "
 					/>
@@ -144,7 +144,6 @@ const PostDetails = () => {
 							<Comment
 								key={c._id}
 								c={c}
-								// post={post}
 							/>
 						))}
 					</div>

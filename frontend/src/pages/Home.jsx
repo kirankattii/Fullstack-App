@@ -51,7 +51,7 @@ const Home = () => {
 						<>
 							<Link to={user ? `/posts/post/${post._id}` : "/login"}>
 								<HomePosts
-									key={post._id}
+									key={post.photo}
 									post={post}
 								/>
 							</Link>
